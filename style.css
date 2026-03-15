@@ -37,6 +37,7 @@ nav {
 .menu {
     display: flex;
     gap: 20px;
+    margin-top: 10px;
 }
 
 a {
@@ -54,15 +55,24 @@ h1 {
 
 .hero {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
+    height: 50vh;
+    z-index: 3;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background-image: url(src/img/fondo_hero.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 500px;
-    width: 100%;
-    overflow: hidden;
+    z-index: -1;
+    filter: blur(2px);
 }
 
 .contenedorP_hero {
@@ -91,10 +101,11 @@ h1 {
 .titulo_overworld h2 {
     font-family: 'Minecrafter', sans-serif;
     font-weight: lighter;
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: #ffffff;
     position: absolute;
-    left: 19%;
+    left: 15%;
+    z-index: 2;
 }
 
 .titulo_overworld p {
@@ -194,10 +205,11 @@ h1 {
     width: 100%;
     margin-top: 80px;
     margin-bottom: 70px;
+    gap: 5em;
 }
 
 .titulo_cuevas {
-    width: 35%;
+    flex: 1;
 }
 
 .titulo_cuevas h2 {
@@ -209,19 +221,17 @@ h1 {
 }
 
 .titulo_cuevas p {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: #ffffff;
     margin-bottom: 10px;
 }
 
 .contenedor_consejos {
+    flex: 2;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
-    height: 100%;
-    width: 50%;
-    gap: 35px;
+    gap: 5em;
 }
 
 .child_consejo {
@@ -233,7 +243,8 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     padding: 10px;
-    height: 90%;
+    box-sizing: border-box;
+    height: 100%;
     width: 40%;
 }
 
