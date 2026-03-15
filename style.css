@@ -76,6 +76,7 @@ h1 {
     background-color: #7BB14A;
     display: flex;
     padding: 40px;
+    position: relative;
 }
 
 .titulo_overworld {
@@ -92,12 +93,16 @@ h1 {
     font-weight: lighter;
     font-size: 3rem;
     color: #ffffff;
+    position: absolute;
+    left: 19%;
 }
 
 .titulo_overworld p {
     font-size: 1.5rem;
     color: #ffffff;
     text-align: right;
+    position: absolute;
+    top: 90px;
 }
 
 .informacion_overworld {
