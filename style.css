@@ -14,6 +14,7 @@ body {
     background-color: #000000;
 }
 
+
 nav {
     padding: 10px 50px 10px 50px;
     background-color: #1c1c1c;
@@ -197,12 +198,12 @@ h1 {
     background-position: top;
     background-repeat: no-repeat;
     width: 100%;
-    max-width: 100%;
     padding: 40px;
 }
 
 .header_cuevas {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     margin-top: 80px;
     margin-bottom: 70px;
@@ -244,15 +245,14 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     padding: 10px;
-    box-sizing: border-box;
     height: 100%;
-    width: 40%;
+    flex: 1;
 }
 
 .child_consejo h3 {
     font-family: 'Minecrafter', sans-serif;
     color: #ffffff;
-    font-size: 1.9rem;
+    font-size: 2rem;
     font-weight: lighter;
     text-align: center;
     margin-bottom: 10px;
@@ -260,7 +260,7 @@ h1 {
 
 .child_consejo p {
     color: #ffffff;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 /*Minerales*/
@@ -275,7 +275,7 @@ h1 {
 .contenedor_minerales {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 35px;
 }
 
 .mineral {
@@ -285,6 +285,16 @@ h1 {
     width: 313px;
     height: 300px;
     border: 1px solid #ffffff;
+    transition:
+        transform 350ms ease,
+        box-shadow 350ms ease,
+        background-color 500ms ease-in-out;
+}
+
+.mineral:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .imagen_mineral {
