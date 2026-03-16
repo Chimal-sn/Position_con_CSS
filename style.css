@@ -80,7 +80,7 @@ h1 {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(src/img/fondo_hero.jpg);
+    background-image: url(src/img/fondo_hero.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -176,19 +176,19 @@ h1 {
 }
 
 .ciclo {
-    background-image: url(src/img/fondo_ciclo.png);
+    background-image: url(src/img/fondo_ciclo.webp);
 }
 
 .clima {
-    background-image: url(src/img/fondo_clima.png);
+    background-image: url(src/img/fondo_clima.webp);
 }
 
 .vegetacion {
-    background-image: url(src/img/fondo_vegetacion.png);
+    background-image: url(src/img/fondo_vegetacion.webp);
 }
 
 .flora {
-    background-image: url(src/img/fondo_flora.png);
+    background-image: url(src/img/fondo_flora.webp);
 }
 
 /*Seccion de cuevas*/
@@ -205,21 +205,34 @@ h1 {
 .informacion_cuevas {
     display: flex;
     flex-direction: column;
-    background-image: url(src/img/fondo_cuevas.png);
+    background-image: url(src/img/fondo_cuevas.webp);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     width: 100%;
     padding: 40px;
+    position: relative;
 }
 
-.header_cuevas {
+
+.informacion_cuevas .header_cuevas {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     margin-top: 80px;
     margin-bottom: 70px;
     gap: 5em;
+
+}
+
+.antorcha {
+    position: absolute;
+    top: 60px;
+    left: 250px;
+}
+
+.antorcha img {
+    width: 50%;
 }
 
 .titulo_cuevas {
@@ -252,7 +265,7 @@ h1 {
     align-self: center;
     display: flex;
     flex-direction: column;
-    background-image: url(src/img/cartel.png);
+    background-image: url(src/img/cartel.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
